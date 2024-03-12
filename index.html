@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <!-- Add fonts from Adobe fonts or Google Fonts -->
+    <title>Submit Recommendations</title>
+    <!-- Add a favicon -->
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+  <!-- Implement a skip to main! -->
+  <a href="#maincontent" class="skip-link">Skip to Main Content</a>
+  
+    <form action="https://formspree.io/f/xrgnlrde" method="post" id="maincontent">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+<div class="radio">
+        <label>Area of Submission:</label><br>
+        <!-- How can the label and button line up and be easily navigatable? -->
+        <div class="radio-option">
+          <input type="radio" id="travel" name="interest" value="travel" required>
+          <label for="travel">Travel</label>
+        </div>
+        <div class="radio-option">
+          <input type="radio" id="recipe" name="interest" value="recipe">
+          <label for="recipe">Recipe</label>
+        </div>
+        <div class="radio-option">
+          <input type="radio" id="pets" name="interest" value="pets">
+          <label for="pets">Pets</label>
+        </div>
+</div>
+
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"></textarea><br><br>
+
+        <label for="image">Upload Image:</label><br>
+        <input type="file" id="image" name="image"><br><br>
+
+        <input type="submit" value="Submit">
+
+        <button type="reset">Reset</button>
+      </form>
+</body>
+</html>

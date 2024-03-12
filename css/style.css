@@ -1,0 +1,95 @@
+form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  width: 70%;
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background: #f5f5f5;
+}
+
+fieldset.radio {
+  border: none;
+  padding: 0;
+}
+
+legend {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.radio-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: right;
+  width: 80%;
+}
+
+.radio-option label {
+  flex-grow: 1;
+  order: -1;
+  text-align: left;
+  margin-right: auto;
+}
+
+.radio-option input[type="radio"] {
+  margin-left: 20px;
+}
+
+#name, #message, input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #fff;
+  color: #333;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type="submit"], button[type="reset"] {
+  width: calc(50% - 10px);
+  padding: 10px;
+  margin: 5px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover, button[type="reset"]:hover {
+  opacity: 0.9;
+}
+
+button[type="reset"] {
+  background-color: #6c757d;
+}
+
+button[type="reset"]:hover {
+  background-color: #545b62;
+}
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #000;
+  color: white;
+  padding: 8px 16px;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0;
+}
