@@ -1,3 +1,8 @@
+body {
+  font-family: "Trirong", serif;
+}
+
+
 form {
   display: grid;
   grid-template-columns: 1fr;
